@@ -60,6 +60,7 @@
     .link:hover,
     .link:focus {
       color: #2196F3;
+      fill: #2196F3;
     }
     .container {
       width: 1200px;
@@ -112,7 +113,16 @@
   
     .header__mail {
       margin-right: 50px;
+      display: flex;
     } 
+    .header__tel {
+      display: flex;
+      
+    }
+    .icon {
+      margin-right: 10px;
+    }
+   
     .link {
       display: flex;
       /* outline: 1px solid rgb(37, 173, 25); */
@@ -129,6 +139,8 @@
       align-items: center;
       justify-content: space-between;
     }
+    
+
   
    
     /*---------------------------------------- hero */
@@ -223,6 +235,23 @@
 
       margin-bottom: 10px;
     }
+
+    .features-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+      height: 120px;
+
+      background: #F5F4FA;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+    .features-list__icon  {
+      width: 70px;
+      height: 70px;
+    
+    }
     .features {
       padding-top: 94px;
       padding-bottom: 94px;
@@ -238,6 +267,7 @@
       line-height: 1.167;
       letter-spacing: 0.03em;
       /* color: #212121; */
+      
     }
     .work-examples {
       padding-bottom: 94px;
@@ -334,12 +364,64 @@
     .social-list__link:hover .social-list__icon,
     .social-list__link:focus .social-list__icon {
       fill:#ffffff;
-      background: #2196F3;
+      /* background: #2196F3; */
     }
     .social-list__icon {
       width: 20px;
       height: 20px;
       fill: #AFB1B8;
+    }
+
+    /*    -------------------------------------------Client------------  */
+    .client__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.167;
+      letter-spacing: 0.03em;
+
+      text-align: center;
+      margin-bottom: 50px;
+
+     
+      /* background-color: rgb(139, 111, 204); */
+    }
+    .client-list {
+      display: flex;
+      justify-content: space-between;
+      color: rgb(3, 43, 12);
+    
+    }
+    .client-list__link {
+      display: flex;
+      width: 170px;
+      height: 90px;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px solid #AFB1B8;
+      box-sizing: border-box;
+      border-radius: 4px;
+      
+    }
+    .client-list__icon {
+      fill: #AFB1B8;
+    }
+    .client-list__link:hover,
+    .client-list__link:focus {
+      border: 1px solid #2196F3;
+   
+    }
+    .client-list__link:hover .client-list__icon,
+    .client-list__link:focus .client-list__icon {
+      fill:#2196F3;
+      /* background: #2196F3; */
+    }
+
+
+    .client {
+      padding-top: 94px;
+      padding-bottom: 192px;
     }
     /*    ---------------------------------------- Footer */
     .footer__adrress a{
@@ -378,10 +460,53 @@
     .footer .address {
       display: flex;
       flex-direction: column;
+      margin-right: 70px;
     }
     .footer .item:not(:last-child) {
       margin-bottom: 9px;
     }
+    .footer .container {
+      display: flex;
+    }
+    .social {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+      padding-top: 12px;
+      margin-bottom: 20px;
+    }
+    .footer__social  {
+      display: flex;
+      flex-direction: column
+     
+    }
+    .footer__social-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .footer__social-link:hover,
+    .footer__social-link:focus {
+      background: #2196F3;
+    }
+    .footer__social-list {
+      display: flex;
+      justify-content: space-between;
+    }
+    .social-list__icon {
+      fill: #ffffff;
+    }
+    
        /* -----------------------Catalog-------------- */
     .catalog__btn {
       font-family: 'Roboto', sans-serif;
